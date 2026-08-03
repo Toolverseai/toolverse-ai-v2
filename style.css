@@ -142,3 +142,38 @@ margin:50px auto;
     margin:0;
   }
 }
+.tool-card{
+  background:#101d30;
+  border:1px solid #2d5d96;
+  border-radius:16px;
+  padding:20px;
+  margin:20px auto;
+  max-width:800px;
+  transition:.3s;
+}
+
+.tool-card:hover{
+  transform:translateY(-4px);
+  border-color:#4da3ff;
+}
+
+.tool-card h2{
+  color:#fff;
+  margin-bottom:10px;
+}
+
+.tool-card p{
+  color:#b8c4d6;
+  margin-bottom:15px;
+}
+
+.tool-card a{
+  display:inline-block;
+  color:#4da3ff;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.tool-card a:hover{
+  text-decoration:underline;
+}
