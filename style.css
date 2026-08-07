@@ -223,3 +223,51 @@ margin:50px auto;
 .visit-btn:hover{
   background:#444;
   }
+
+/* ===== Featured AI Tools ===== */
+
+.featured-section{
+  margin:40px 0;
+  padding:25px;
+  background:#111827;
+  border:1px solid #2a3441;
+  border-radius:20px;
+}
+
+.featured-section h2{
+  text-align:center;
+  color:#fff;
+  margin-bottom:8px;
+}
+
+.featured-text{
+  text-align:center;
+  color:#9ca3af;
+  margin-bottom:20px;
+}
+
+.featured-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+  gap:15px;
+}
+
+.featured-card{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-decoration:none;
+  color:#fff;
+  background:#1f2937;
+  border:1px solid #374151;
+  border-radius:14px;
+  padding:18px;
+  font-weight:700;
+  transition:.3s;
+}
+
+.featured-card:hover{
+  transform:translateY(-6px);
+  border-color:#3b82f6;
+  box-shadow:0 10px 25px rgba(59,130,246,.35);
+}
