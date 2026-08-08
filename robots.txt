@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://toolverseai.github.io/toolverse-ai-v2/sitemap.xml
