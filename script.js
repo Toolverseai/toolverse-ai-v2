@@ -22,3 +22,33 @@ searchInput.addEventListener("input", () => {
     }
   });
 });
+
+// ToolVerse AI - Remove duplicate tool cards
+document.addEventListener("DOMContentLoaded", () => {
+
+  const cards = document.querySelectorAll("#tools .tool-card");
+  const seen = new Set();
+
+  cards.forEach(card => {
+    const title = card.querySelector("h2");
+
+    if (!title) return;
+
+    let name = title.textContent
+      .trim()
+      .toLowerCase()
+      .replace(/\s+/g, " ");
+
+    name = name
+      .replace(/\s+ai$/g, "")
+      .replace(/\s+plus$/g, "");
+
+    if (seen.has(name)) {
+      card.remove();
+    } else {
+      seen.add(name);
+    }
+  });
+
+  console.log("ToolVerse AI: duplicate tools cleaned.");
+});
